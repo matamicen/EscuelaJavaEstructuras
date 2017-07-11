@@ -1,6 +1,7 @@
 package com.captton.class1;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class class1 {
@@ -13,17 +14,17 @@ public class class1 {
 		final String mes1 = "Enero";
 		String diaDeSemana = "Lunes";
 		
-		String[] nombres;
-		nombres = new String[5];
+		int[] numeros;
+		numeros = new int[5];
 		
 		ArrayList<String> alumnos;
 		
 		
-		nombres[0]="Gaston";
-		nombres[1]="Maria";
-		nombres[2]="Jose";
+		numeros[0]=23;
+		numeros[1]=11;
+		numeros[2]=14;
 		
-		System.out.println(nombres[0]);
+		System.out.println("El numero en la posicion 0 es:" + numeros[0]);
 		
 		esVaron = true;
 		float resultado;
@@ -66,15 +67,16 @@ public class class1 {
 		
 		
 		
-		for(int cont=0; cont <= 2; cont++)
+		for(int cont=0; cont <= numeros.length -1; cont++)
 		{
-			System.out.println("Contador de IF es: "+cont+nombres[cont]);
-			
+			System.out.println("Contador de IF es: "+cont);
+			System.out.println("El array en esa posicion tiene el numero:" +numeros[cont]);
 		}
 		
 		int cont = 0;
 		while (cont<=2){
-			System.out.println("Contador de IF es: "+cont+nombres[cont]);
+			System.out.println("Contador de IF es: "+cont);
+			System.out.println("El array en esa posicion tiene el numero:" +numeros[cont]);
 			cont++;
 			
 		}
@@ -92,6 +94,20 @@ public class class1 {
 			if (alu.equals("Ezequiel")) System.out.println("Encontro a Ezequiel!!");
 			System.out.println(alu);
 		}
+		
+		
+		  Scanner sc = new Scanner(System.in);
+		  System.out.print("Ingrese su nombre: ");
+	        String nombre = sc.nextLine();
+	        
+	        System.out.print("Ingrese su edad: ");
+	        int edad = sc.nextInt();
+	        
+	        
+	        System.out.println("Hola, " + nombre + ". Tu edad es: " + edad);
+	        
+	        if (edad>40)  System.out.println("que viejo estas!!");
+		
 		
 		
 

@@ -1,5 +1,8 @@
 package com.captton.class1;
 
+import java.util.ArrayList;
+
+
 public class class1 {
 
 	public static void main(String[] args) {
@@ -12,6 +15,9 @@ public class class1 {
 		
 		String[] nombres;
 		nombres = new String[5];
+		
+		ArrayList<String> alumnos;
+		
 		
 		nombres[0]="Gaston";
 		nombres[1]="Maria";
@@ -72,6 +78,22 @@ public class class1 {
 			cont++;
 			
 		}
+		
+		alumnos = new ArrayList<String>();
+		
+		alumnos.add("Jorge");
+		alumnos.add("Esteban");
+		alumnos.add("Ezequiel");
+		alumnos.add("Jessica");
+		System.out.println(alumnos.get(2));
+		
+		for(String alu: alumnos )
+		{
+			if (alu.equals("Ezequiel")) System.out.println("Encontro a Ezequiel!!");
+			System.out.println(alu);
+		}
+		
+		
 
 		
 		
